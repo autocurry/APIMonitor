@@ -4,10 +4,10 @@ public class ResponseClass
 {
 
 
-    public string APIURL { get; set; }
+    public string ResponseUri { get; set; }
 
 
-    public string Result { get; set; }
+    public string ResponseStatus { get; set; }
 
 
     public string StatusCode { get; set; }
@@ -16,7 +16,7 @@ public class ResponseClass
     public string ResponseTime { get; set; }
 
 
-    public string Response { get; set; }
+    public string Content { get; set; }
 
 
 }

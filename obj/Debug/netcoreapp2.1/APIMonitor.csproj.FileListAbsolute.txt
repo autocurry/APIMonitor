@@ -1,0 +1,11 @@
+/home/sandeep/Desktop/CodePractice/APIMonitor/bin/Debug/netcoreapp2.1/APIMonitor.deps.json
+/home/sandeep/Desktop/CodePractice/APIMonitor/bin/Debug/netcoreapp2.1/APIMonitor.runtimeconfig.json
+/home/sandeep/Desktop/CodePractice/APIMonitor/bin/Debug/netcoreapp2.1/APIMonitor.runtimeconfig.dev.json
+/home/sandeep/Desktop/CodePractice/APIMonitor/bin/Debug/netcoreapp2.1/APIMonitor.dll
+/home/sandeep/Desktop/CodePractice/APIMonitor/bin/Debug/netcoreapp2.1/APIMonitor.pdb
+/home/sandeep/Desktop/CodePractice/APIMonitor/obj/Debug/netcoreapp2.1/APIMonitor.csprojAssemblyReference.cache
+/home/sandeep/Desktop/CodePractice/APIMonitor/obj/Debug/netcoreapp2.1/APIMonitor.csproj.CoreCompileInputs.cache
+/home/sandeep/Desktop/CodePractice/APIMonitor/obj/Debug/netcoreapp2.1/APIMonitor.AssemblyInfoInputs.cache
+/home/sandeep/Desktop/CodePractice/APIMonitor/obj/Debug/netcoreapp2.1/APIMonitor.AssemblyInfo.cs
+/home/sandeep/Desktop/CodePractice/APIMonitor/obj/Debug/netcoreapp2.1/APIMonitor.dll
+/home/sandeep/Desktop/CodePractice/APIMonitor/obj/Debug/netcoreapp2.1/APIMonitor.pdb
