@@ -36,25 +36,28 @@ public class CreateHtml{
         }
 
 
-        public string ReplaceContentValues(string html,List<ResponseClass> responseList)
+         public string ReplaceContentValues(string html,List<ResponseClass> responseList)
         {
             string value = string.Empty;
+            int rownum = 1;
             
             string replacerows = string.Empty;
+            string DetailsDiv = string.Empty;
 
 
             foreach(ResponseClass item in responseList)
             {
-                replacerows = replacerows + "<tr><td>" + item.APIURL + "</td><td>" + item.Status + "</td><td>" + item.StatusCode + "</td><td>" + item.ResponseTime + "</td><td>ResponseContent</td></tr>";
-
+                replacerows = replacerows + "<tr><td>" + item.APIURL + "</td><td>" + item.Status + "</td><td>" + item.StatusCode + "</td><td>" + item.ResponseTime + "</td><td><a id="+ rownum + " href=\"#\" onclick=\"toggleAppearance(this.id);\">ResponseContent</a></td></tr>";
+                DetailsDiv = DetailsDiv + "<div id=details" + rownum + " class=detailsdiv>" + item.Response+"</div>";
+                rownum= rownum + 1;
             }
        
 
-            string newstring = html.Replace("MonitorPlaceHolder", replacerows);          
+            string newstring = html.Replace("MonitorPlaceHolder", replacerows);
+            newstring = newstring.Replace("PlaceHolderForDetailsDIV", DetailsDiv);
 
             return newstring;
 
         }
-      
 
 }
