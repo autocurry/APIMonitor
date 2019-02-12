@@ -12,7 +12,40 @@
         p {
             color: red;
         }
+
+        .contents {
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            background-color: gray;
+            margin-top: 20px;
+            visibility: hidden;
+        }
+        .detailsdiv{
+            display:none;
+        }
     </style>
+
+    <script>
+
+	function toggleAppearance(id)
+{
+
+        var dataDiv = document.getElementById("details" + id).innerHTML;
+        var detailsof = document.getElementById('contents');
+
+        if (detailsof.style.visibility == "hidden") {
+            detailsof.style.visibility = "visible";
+            detailsof.innerHTML = dataDiv;
+        }
+        else {
+            detailsof.style.visibility = "hidden";
+        }
+}
+
+    </script>
+
+
 </head>
 
 <body>
@@ -28,27 +61,42 @@
 
         <tr>
             <td>EnvPlaceHolder</th>
-            <td>ExecutionTimePlaceHolder</th>
-            <td>ExecutionUserPlaceHolder</th>
+            <td>ExecutionTimePlaceHolder</td>
+            <td>ExecutionUserPlaceHolder</td>
         </tr>
     </table>
 
-    <table border="1">
-        <tr>
+    <div name="fulldata">
+
+        <div name="summary">
+
+            <table border="1">
+                <tr>
+
+                    <th>API URL</th>
+                    <th>Status</th>
+                    <th>Result</th>
+                    <th>Response Time</th>
+                    <th>Response Content</th>
+
+                </tr>
+
+                <tr>
+                    MonitorPlaceHolder
+                </tr>
+            </table>
+        </div>  
+
+        <div id="contents">
+
             
-            <th>API URL</th>
-            <th>Status</th>
-            <th>Result</th>
-            <th>Response Time</th>
-            <th>Response Content</th>
 
-        </tr>
+        </div>
+        <div>
+            PlaceHolderForDetailsDIV
+        </div>
 
-        <tr>
-            MonitorPlaceHolder
-        </tr>
-    </table>
-
+    </div>
 
 </body>
 </html>
