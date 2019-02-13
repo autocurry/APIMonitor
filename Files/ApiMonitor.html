@@ -28,8 +28,7 @@
 
     <script>
 
-	function toggleAppearance(id)
-{
+	function toggleAppearance(id){
 
         var dataDiv = document.getElementById("details" + id).innerHTML;
         var detailsof = document.getElementById('contents');
@@ -50,16 +49,12 @@ window.onload = function () {
 
         var first_td = tr[i].cells[1];
       
-        if(first_td.innerHTML == 'error')
+        if(first_td.innerHTML == 'error' || first_td.innerHTML == 'error1' || first_td.innerHTML == 'error2')
         {
-           first_td.style.color = 'red';
-           
+           first_td.style.color = 'red';           
 
-        }      
-
-       
-    } 
-    
+        }             
+    }     
 }
 
     </script>
@@ -133,7 +128,7 @@ window.onload = function () {
                 <tr>
 
                     <td>API URL</td>
-                    <td id="status" >Status</td>
+                    <td id="status" >error1</td>
                     <td>Result</td>
                     <td>Response Time</td>
                     <td>Response Content</td>
