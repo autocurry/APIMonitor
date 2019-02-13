@@ -43,6 +43,25 @@
         }
 }
 
+window.onload = function () {
+    var tbl = document.getElementById('detailstable');
+    var tr = tbl.getElementsByTagName('tr');
+    for (var i = 0; i < tr.length; i++) {
+
+        var first_td = tr[i].cells[1];
+      
+        if(first_td.innerHTML == 'error')
+        {
+           first_td.style.color = 'red';
+           
+
+        }      
+
+       
+    } 
+    
+}
+
     </script>
 
 
@@ -52,7 +71,7 @@
 
     <h1>API Monitor</h1>
 
-    <table name=headings border=1>
+    <table name="headings" border="1" >
         <tr>
             <th>Env</th>
             <th>Execution Time</th>
@@ -70,11 +89,11 @@
 
         <div name="summary">
 
-            <table border="1">
+            <table border="1" id="detailstable">
                 <tr>
 
                     <th>API URL</th>
-                    <th>Status</th>
+                    <th id="status" >Status</th>
                     <th>Result</th>
                     <th>Response Time</th>
                     <th>Response Content</th>
@@ -82,8 +101,120 @@
                 </tr>
 
                 <tr>
-                    MonitorPlaceHolder
+
+                    <td>API URL</td>
+                    <td id="status" >Status</td>
+                    <td>Result</td>
+                    <td>Response Time</td>
+                    <td>Response Content</td>
+
                 </tr>
+                
+                <tr>
+
+                    <td>API URL</td>
+                    <td id="status" >Status</td>
+                    <td>Result</td>
+                    <td>Response Time</td>
+                    <td>Response Content</td>
+
+                </tr>
+                
+                <tr>
+
+                    <td>API URL</td>
+                    <td id="status" >error</td>
+                    <td>Result</td>
+                    <td>Response Time</td>
+                    <td>Response Content</td>
+
+                </tr>
+                
+                <tr>
+
+                    <td>API URL</td>
+                    <td id="status" >Status</td>
+                    <td>Result</td>
+                    <td>Response Time</td>
+                    <td>Response Content</td>
+
+                </tr>
+                
+                <tr>
+
+                    <td>API URL</td>
+                    <td id="status" >Status</td>
+                    <td>Result</td>
+                    <td>Response Time</td>
+                    <td>Response Content</td>
+
+                </tr>
+                
+                <tr>
+
+                    <td>API URL</td>
+                    <td id="status" >Status</td>
+                    <td>Result</td>
+                    <td>Response Time</td>
+                    <td>Response Content</td>
+
+                </tr>
+                <tr>
+
+                    <td>API URL</td>
+                    <td id="status" >Status</td>
+                    <td>Result</td>
+                    <td>Response Time</td>
+                    <td>Response Content</td>
+
+                </tr>
+                <tr>
+
+                    <td>API URL</td>
+                    <td id="status" >Status</td>
+                    <td>Result</td>
+                    <td>Response Time</td>
+                    <td>Response Content</td>
+
+                </tr>
+                <tr>
+
+                    <td>API URL</td>
+                    <td id="status" >Status</td>
+                    <td>Result</td>
+                    <td>Response Time</td>
+                    <td>Response Content</td>
+
+                </tr>
+                <tr>
+
+                    <td>API URL</td>
+                    <td id="status" >Status</td>
+                    <td>Result</td>
+                    <td>Response Time</td>
+                    <td>Response Content</td>
+
+                </tr>
+                <tr>
+
+                    <td>API URL</td>
+                    <td id="status" >Status</td>
+                    <td>Result</td>
+                    <td>Response Time</td>
+                    <td>Response Content</td>
+
+                </tr>
+                <tr>
+
+                    <td>API URL</td>
+                    <td id="status" >Status</td>
+                    <td>Result</td>
+                    <td>Response Time</td>
+                    <td>Response Content</td>
+
+                </tr>
+                
+
             </table>
         </div>  
 
@@ -92,9 +223,7 @@
             
 
         </div>
-        <div>
-            PlaceHolderForDetailsDIV
-        </div>
+       
 
     </div>
 
