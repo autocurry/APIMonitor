@@ -6,7 +6,7 @@ public class CreateHtml{
 
  public string CreateHTMLMonitor(List<ResponseClass> _responseList, string output)
         {
-
+          //I have no idea what this file does
             //string json = File.ReadAllText(input);
             //var _response = JsonConvert.DeserializeObject<List<ResponseClass>>(json);
             
